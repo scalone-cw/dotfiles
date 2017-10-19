@@ -1,7 +1,7 @@
 runtime! autoload/pathogen.vim
 
 if exists('g:loaded_pathogen')
-  call pathogen#infect(expand('~/.vim/bundles/{}'))
+  call pathogen#infect(expand('~/.vim/bundle/{}'))
 end
 
 if has("gui_running")
