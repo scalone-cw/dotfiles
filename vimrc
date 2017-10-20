@@ -1,7 +1,6 @@
 runtime! autoload/pathogen.vim
 
 if exists('g:loaded_pathogen')
-  "call pathogen#infect(expand('~/.vim/bundle/{}'))
   call pathogen#infect()
 end
 
