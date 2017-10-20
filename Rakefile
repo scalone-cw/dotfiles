@@ -20,9 +20,9 @@ namespace :dotfile do
     path_root = File.dirname(File.realpath(__FILE__))
     entries   = %w(bashrc gemrc gitconfig gitignore scripts sheet vim vimrc)
     entries.each do |entry|
-      check_bkp(entry)
       path = File.join(path_root, entry)
       dot  = File.join(ENV["HOME"], ".#{entry}")
+      check_bkp(dot)
 
       FileUtils.ln_s(path, dot)
     end
