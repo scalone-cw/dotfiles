@@ -16,6 +16,15 @@ endif
 
 set nocompatible
 
+" set listchars=tab:▹\ ,eol:¬
+" set list
+""" syntax colors
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+compiler ruby
+
 if has("autocmd")
 	" File type detection
 	filetype on
@@ -81,16 +90,6 @@ set statusline=%y\ %f\ %=\ %(%-l,%-c%-V\ %-P%)
 set shm=filmnrwxt
 
 set linebreak
-
-" set listchars=tab:▹\ ,eol:¬
-" set list
-""" syntax colors
-syntax on
-filetype on
-filetype indent on
-filetype plugin on
-compiler ruby
-
 
 colorscheme desert
 set background=dark
